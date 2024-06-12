@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container" >
+        <nav>
+            <img src="images/logo
+            .png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>  
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>                         
+            
+            </ul>
+
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I am <span>Akriti</span><br>Puja From India</h1>
+        </div>
+    </div>
+</div>
+
+<!------------about---------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/back.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Welcome to my Portfolio! I am a passionate web developer and designer with a strong background in creating beautiful and functional website </p> 
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                    <p class="tab-links"onclick="opentab('education')" >Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                </div>
+                <div class = "tab-contents active-tab" id="skill">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>                        
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Core Java</span><br>Solved problem of core Java</br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>2023- Current</span><br>Pursuing Bachelor of Technology at Institute of Technical Education And Research </li>                        
+                        <li><span>2020</span><br>Passed 12th from Guru Gobind Singh Public School</li>
+                        <li><span>2018</span><br>Passed 10th from Guru Gobind Singh Public School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience" >
+                    <ul>
+                        <li><span>2023 - Current</span><br>Web Developer <br>Trained in servicenow</li>                       
+                        <li><span>2022</span><br>Participated in one day Hackthon</br></li>
+                        <li><span>2021</span><br>Worked as Campus Ambassador at UpGrad and Intershala</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium totam quae doloribus soluta reiciendis, culpa amet! Quaerat vel, ipsam voluptate reiciendis quia distinctio soluta labore eos iusto. A, eos amet.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium totam quae doloribus soluta reiciendis, culpa amet! Quaerat vel, ipsam voluptate reiciendis quia distinctio soluta labore eos iusto. A, eos amet.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Java Developer</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium totam quae doloribus soluta reiciendis, culpa amet! Quaerat vel, ipsam voluptate reiciendis quia distinctio soluta labore eos iusto. A, eos amet.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="Work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connect you to the talented people around the world.
+                            Download it from here 
+                        </p>
+                        <a href="#">Download</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connect you to the talented people around the world.
+                            Download it from here 
+                        </p>
+                        <a href="#">Download</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connect you to the talented people around the world.
+                            Download it from here 
+                        </p>
+                        <a href="#">Download</a>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab (tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+        
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+</script>
+
+</body>
+</html>
